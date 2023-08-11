@@ -1,0 +1,74 @@
+/*CSS rules to specify font families:
+font-family: 'Catamaran', sans-serif;
+font-family: 'Manrope', sans-serif;
+font-family: 'Space Grotesk', sans-serif;
+font-family: 'Varela Round', sans-serif;*/
+
+body {
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    background-color: #F5F7FA;
+}
+
+.display {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size:x-large;
+    color: #123354;
+}
+
+.btn-primary {
+    letter-spacing: 4px;
+    font-family: 'Varela Round', sans-serif;
+    text-align:horizontal;
+    background-color: #15A6F0 !important;
+}
+
+#camera, #snapshot {
+    border: #123354 dashed 0.12rem;
+    height: auto;
+}
+
+#camera {
+    width: 600px;
+}
+
+#snapshot{
+    width:505px;
+}
+
+#cam_section, #snap_section, #guess_section {
+    height: auto;
+    width: auto;
+    display:inline-flexbox;
+}
+
+.btn-danger {
+    border-color: #DC3545;
+    color: #DC3545;
+    background-color: rgba(250, 235, 215, 0);
+}
+
+btn-danger:hover {
+    animation-duration: 10ms;
+    width: 500px !important;
+    height:200px !important;
+    background-color: #DC3545;
+    color: white;
+    border: solid #DC3545 15px;
+}
+
+.btn-success {
+    border-color: #198754;
+    color: #198754;
+    background-color: rgba(250, 235, 215, 0);
+}
+
+btn-success:hover {
+    animation-duration: 10ms;
+    width: 500px !important;
+    height:200px !important;
+    background-color: #198754;
+    color: white;
+    border: solid #198754 15px;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hand Gestures!</title>
+        <!--Favicon image-->
+        <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAACgoKAAD/+wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgAAAiIREREiIAACISIiIhIgAAIiIiIiIiAAAiISIhIiIAACIhIiEiIgAAIiEiISIiAAAiISIhIiIAACIiIiIiIgAAAiIiIiIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA4AcAAMADAADAAwAAwAMAAMADAADAAwAAwAMAAMADAADAAwAA4AcAAP//AAD//wAA//8AAP//AAD//wAA" rel="icon" type="image/x-icon" />
+
+        <!--Bootstrap Icons 1.10.2-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+
+        <!--Bootstrap CSS 5.3.1-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+        <!--Bootstrap JS 5.3.1-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+        <!--ml5.js 0.4.3-->
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+        <!--Webcam.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js" integrity="sha512-dQIiHSl2hr3NWKKLycPndtpbh5iaHLo6MwrXm7F0FM5e+kL2U16oE9uIwPHUl6fQBeCthiEuV/rzP3MiAB8Vfw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!--style.css-->
+        <link rel="stylesheet" type="text/css" href="style.css"></link> 
+
+        <!--Google Fonts - Varela Round, Manrope, Catamaran & Space Grotesk--> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=Varela+Round&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+    <center>
+        <br>
+        <div class="container-fluid">
+        <h1 class="btn btn-primary">HAND GESTURE WEB APP<br>
+            <b>&#128400;</b>
+            <b>&#128077;</b>
+            <b>&#128078;</b>
+            <b>&#128076;</b>
+            <b>&#9996;</b>
+            <b>&#128072;</b>
+        </h1>
+        
+        <h5>Capture an image of you doing any of the supported hand gestures on the left, and click the button on the right to let our AI model try and guess what hand gesture you're doing!</h5>
+
+        <p>The model is trained to identify the following hand gestures: <br>
+            &#128400; |
+            &#128077; |
+            &#128078; | 
+            &#128076; |        
+            &#9996; |
+            &#128072;
+        </p>
+
+        <div id="cam_section" class="col-lg-4">
+        <h6 class="display">Webcam View</h6>
+        <div id="camera"></div>
+        <br>
+        <button onclick="take_snapshot();" class="btn btn-sm btn-danger"><i class="bi bi-record-circle"></i> Capture Image</button>
+        <br><br>
+        </div>
+    
+        <div id="guess_section" class="col-lg-4">
+        <div id="emoji_result">
+        
+            <p class="lead">Prediction 1</p>
+            <br>
+            <span id="emoji_1"></span>
+            <br>
+            <p class="lead">Prediction 1</p>
+            <br>
+            <span id="emoji_2"></span> 
+        </div>
+        <br>
+        </div>
+
+        <div id="snap_section" class="col-lg-4">
+        <h6 class="display">Snapshot</h6>
+        <div id="snapshot"></div>
+        <br>
+        <button onclick="check();" class="btn btn-sm btn-success"><i class="bi bi-search"></i> Identify Hand Gesture</button>
+        <br><br>
+        </div>
+    </center>
+</body>
+<script src="main.js"></script>
+</html>
