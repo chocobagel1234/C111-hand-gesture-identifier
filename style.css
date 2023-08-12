@@ -10,6 +10,12 @@ body {
     background-color: #F5F7FA;
 }
 
+footer {
+    background-color: rgb(58, 67, 77);
+    color: white;
+    padding: 10px;
+}
+
 .display {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 600;
@@ -40,7 +46,14 @@ body {
 #cam_section, #snap_section, #guess_section {
     height: auto;
     width: auto;
-    display:inline-flexbox;
+    display:inline-block;
+}
+
+#snap-section {
+    top: 0%;
+    p{
+        top: 0px;;
+    }
 }
 
 .btn-danger {
@@ -49,26 +62,12 @@ body {
     background-color: rgba(250, 235, 215, 0);
 }
 
-btn-danger:hover {
-    animation-duration: 10ms;
-    width: 500px !important;
-    height:200px !important;
-    background-color: #DC3545;
-    color: white;
-    border: solid #DC3545 15px;
-}
-
 .btn-success {
     border-color: #198754;
     color: #198754;
     background-color: rgba(250, 235, 215, 0);
 }
 
-btn-success:hover {
-    animation-duration: 10ms;
-    width: 500px !important;
-    height:200px !important;
-    background-color: #198754;
-    color: white;
-    border: solid #198754 15px;
+.transparent-separator {
+    color: #f5f7fa00;
 }
