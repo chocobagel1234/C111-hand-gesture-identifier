@@ -61,7 +61,7 @@ function gotResult(error, results) {
             document.getElementById("emoji_1").innerHTML = "<b>&#9996;</b>";
         }
         if(results[0].label == "Pointing(to something)") {
-            document.getElementById("emoji_1").innerHTML = "<b>&#128072;</b>";
+            document.getElementById("emoji_1").innerHTML = "<b>&#9757;</b>";
         }
         if(results[0].label == "Thumbs Up") {
             document.getElementById("emoji_1").innerHTML = "<b>&#128077;</b>";
@@ -81,7 +81,7 @@ function gotResult(error, results) {
             document.getElementById("emoji_2").innerHTML = "<b>&#9996;</b>";
         }
         if(results[1].label == "Pointing(to something)") {
-            document.getElementById("emoji_2").innerHTML = "<b>&#128072;</b>";
+            document.getElementById("emoji_2").innerHTML = "<b>&#9757;</b>";
         }
         if(results[1].label == "Thumbs Up") {
             document.getElementById("emoji_2").innerHTML = "<b>&#128077;</b>";
